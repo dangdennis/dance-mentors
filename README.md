@@ -1,7 +1,7 @@
 ## Dance Mentors
 
 DansuMentors is a social platform that allows mentees to find local hip-hop mentors and advance their
-dance careers. Mentees are able to contact mentors, and mentors are able to keep track of their mentees' status. This 
+dance careers. Mentees are able to contact mentors, and mentors are able to keep track of their mentees' status.
 
 **Senior Devs**
 
