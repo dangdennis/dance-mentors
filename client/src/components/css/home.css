@@ -1,0 +1,21 @@
+.main {
+    /* The image used */
+    background-image: url("../../../dist/dansu1.png");
+
+    /* Full height */
+    height: 70vh;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.buttonSize:hover {
+    background-color: #d8697d;
+}
+
+.title,
+.sub {
+    color: #003242;
+}

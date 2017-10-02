@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./css/bootstrap-social.css";
 import "./css/footer.css";
 
-export default () =>
+export default () => (
   <div>
     <footer className="footer mdl-bgcolor--primary-dark">
       <div className="container-fluid">
@@ -12,7 +12,8 @@ export default () =>
             <h3 className="underline">DansuMentors</h3>
             <div>
               <p>
-                Link up with a mentor near you. Be a part of Orange County's hip-hop dance community.   
+                Link up with a mentor near you. Be a part of Orange County's hip-hop dance
+                community.
               </p>
             </div>
           </div>
@@ -27,13 +28,19 @@ export default () =>
           <div className="a col-md-3">
             <h4 className="underline">Connect with us</h4>
             <div className="icon">
-              <a href="https://facebook.com/" className="btn btn-social-icon btn-facebook mr-3" >
+              <a
+                href="https://facebook.com/"
+                className="btn btn-social-icon btn-facebook mr-3">
                 <span className="fa fa-facebook" />
               </a>
-              <a href="https://twitter.com/"className="btn btn-social-icon btn-twitter mr-3" >
+              <a
+                href="https://twitter.com/"
+                className="btn btn-social-icon btn-twitter mr-3">
                 <span className="fa fa-twitter" />
               </a>
-              <a href="https://accounts.google.com/SignUp?hl=en" className="btn btn-social-icon btn-google" >
+              <a
+                href="https://accounts.google.com/SignUp?hl=en"
+                className="btn btn-social-icon btn-google">
                 <span className="fa fa-google" />
               </a>
             </div>
@@ -46,10 +53,11 @@ export default () =>
           <p>
             Copyright © 2017 Dansu
             <span className="division">Mentors | All</span> Rights Reserve<a href="https://www.guildwars2.com/en/path-of-fire/">d</a>
-            <br/>
-            <br/>
+            <br />
+            <br />
           </p>
         </div>
       </div>
     </footer>
-  </div>;
+  </div>
+);

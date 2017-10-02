@@ -1,35 +1,52 @@
-const { resolve } = require('path');
-const webpack = require('webpack');
+const { resolve } = require("path");
+const webpack = require("webpack");
 
 module.exports = {
     entry: [
         //'react-hot-loader/patch',
-        'webpack-dev-server/client?http://localhost:3000',
+        "webpack-dev-server/client?http://localhost:3000",
         //'webpack/hot/only-dev-server',
-        './index.js'
+        "./index.js"
     ],
     output: {
-        filename: 'bundle.js',
-        path: resolve(__dirname, 'dist'),
-        publicPath: '/'
+        filename: "bundle.js",
+        path: resolve(__dirname, "dist"),
+        publicPath: "/"
     },
-    context: resolve(__dirname, 'src'),
-    devtool: 'inline-source-map',
+    context: resolve(__dirname, "src"),
+    devtool: "inline-source-map",
     module: {
         rules: [
             {
                 test: /\.js|.jsx?$/,
-                use: [ 'babel-loader' ],
+                use: ["babel-loader"],
                 exclude: /node_modules/
             },
             {
                 test: /\.css$/,
-                loader: 'style-loader!css-loader'
+                loader: "style-loader!css-loader"
             },
             {
                 test: /\.(gif|png|jpe?g|svg)$/i,
-                use: [ 'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
-                    'image-webpack-loader?bypassOnDebug' ]
+                use: [
+                    "file-loader?hash=sha512&digest=hex&name=[hash].[ext]",
+                    "image-webpack-loader?bypassOnDebug"
+                ]
+            }
+        ],
+        loaders: [
+            {
+                test: /\.css$/,
+                loaders: ["style-loader", "css-loader", "resolve-url-loader"]
+            },
+            {
+                test: /\.scss$/,
+                loaders: [
+                    "style-loader",
+                    "css-loader",
+                    "resolve-url-loader",
+                    "sass-loader?sourceMap"
+                ]
             }
         ]
     },

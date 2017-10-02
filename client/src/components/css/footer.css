@@ -1,5 +1,6 @@
 footer {
     color: #e0e0e0;
+    height: 10%;
 }
 
 .logoFooter {
@@ -27,7 +28,6 @@ hr {
     box-shadow: 0 10px 10px -10px #598a9c inset;
 }
 
-
 .underline {
     padding-bottom: 8px;
     border-bottom: 1px groove #598a9c;
@@ -45,7 +45,7 @@ hr {
 }
 
 p {
-  font-size: 18px;
+    font-size: 18px;
     margin-bottom: 0;
 }
 
